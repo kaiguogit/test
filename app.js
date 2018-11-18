@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 const errorHandler = require('errorhandler');
 const dotenv = require('dotenv');
 const https = require('https');
-const http = require('http');
 const fs = require('fs');
 
 const widgetController = require('./api/widget');
@@ -36,16 +35,12 @@ app.use(errorHandler());
 app.set('httpsPort', process.env.PORT || (isDev ? 8000 : 443));
 
 // SSL keys
-// const options = {
-//   key: fs.readFileSync('cert/key.pem'),
-//   cert: fs.readFileSync('cert/cert.pem')
-// };
+const options = {
+  key: fs.readFileSync('cert/key.pem'),
+  cert: fs.readFileSync('cert/cert.pem')
+};
 
-// https.createServer(options, app).listen(app.get('httpsPort'), () => {
-//   console.log('%s App is running at https://localhost:%d in %s mode', chalk.green('✓'), app.get('httpsPort'), app.get('env'));
-//   console.log('  Press CTRL-C to stop\n');
-// });
-http.createServer(app).listen(app.get(8000), () => {
-  console.log('%s App is running at https://localhost:%d in %s mode', chalk.green('✓'), 8000, app.get('env'));
+https.createServer(options, app).listen(app.get('httpsPort'), () => {
+  console.log('%s App is running at https://localhost:%d in %s mode', chalk.green('✓'), app.get('httpsPort'), app.get('env'));
   console.log('  Press CTRL-C to stop\n');
 });
