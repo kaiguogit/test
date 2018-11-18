@@ -1,0 +1,46 @@
+[
+    {
+        "username": "fortiwlc",
+        "password": "test",
+        "type": "fortiwlc",
+        "token": "ZqNIW7U1JyG!1Jxfc7cet2ZlXgtKE!",
+        "expire": 1539243335
+    },
+    {
+        "username": "fortimail",
+        "password": "test",
+        "type": "fortimail",
+        "token": "eJW?vrl02IkvCujDqOkJq4wgTk5?YZ",
+        "expire": 1541104180
+    },
+    {
+        "username": "fortiweb",
+        "password": "test",
+        "type": "fortiweb",
+        "token": "jqMm!WQXhcihUCjOU42M73U!DnyQl6",
+        "expire": 1540924635
+    },
+    {
+        "username": "fortiadc",
+        "password": "test",
+        "type": "fortiadc",
+        "token": "nqAAHR!wndyerduxFF9nIc9k2rCCFo",
+        "expire": 1542600880
+    },
+    {
+        "username": "fortiddos",
+        "password": "test",
+        "type": "fortiddos",
+        "delay": 10,
+        "token": "HOWGgDf3suXJAhAQqaPbpgJMbatekz",
+        "expire": 1541105979
+    },
+    {
+        "username": "unknown",
+        "password": "test",
+        "type": "unknown",
+        "delay": 5,
+        "token": "Zn6fRh8vhd!CSvDtzbzy7pRfds7gil",
+        "expire": 1538458843
+    }
+]
